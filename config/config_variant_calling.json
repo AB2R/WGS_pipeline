@@ -1,0 +1,13 @@
+{
+    "project_name": "test_variant_calling",
+    "path_raw_file": "raw_reads/",
+    "path_genome_ref": "./956.gbff",
+    "sample": [
+        {
+            "sampleID": "Bpos"
+        },
+        {
+            "sampleID": "Hpos"
+        }
+    ]
+}

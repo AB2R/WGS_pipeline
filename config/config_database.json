@@ -1,0 +1,6 @@
+{
+    "bakta_database":{
+        "folder_path": "database/bakta",
+        "type": "full"
+    }
+}

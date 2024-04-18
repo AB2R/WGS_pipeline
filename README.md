@@ -1,9 +1,9 @@
-# BAoBAb
+# Whole Genome Sequencing pipeline
 Assemble bacterial genome and make variants call.
 
 ## Description
 
-This project contains two pipelines handled by Snakemake :
+This project contains two major pipelines handled by Snakemake :
 * A de novo bacterial genome assembler coupled with gene annotation design for paired end reads.
 
 <p align="center"><img src="documentation/rulegraph_pipeline_assembly.png" alt="pipeline for de novo assembly" width="250"></p>
@@ -16,58 +16,26 @@ This project contains two pipelines handled by Snakemake :
 
 ### Source
 
-Install the latest version of BAoBAb tools in your directory.
+Install the latest version of WGS pipeline in your directory.
 
 ```
 git clone https://github.com/BAoBAb-biofilm/BAoBAb.git
 ```
 
-### Dependencies
-
-Installing all the dependencies manually:
+### Softs used
 
 Soft|Version
 ---------|------------
-[AbritAMR](https://github.com/MDU-PHL/abritamr) | 1.0.13
-[fastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | 0.11.9
-[Prokka](https://github.com/tseemann/prokka) | 1.14.6
+[Bakta](https://github.com/oschwengers/bakta) | 1.8.2
+[fastp](https://github.com/OpenGene/fastp) | 0.23.4
 [Quast](https://quast.sourceforge.net/) | 5.2.0
-[Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) | 0.39
 [Unicycler](https://github.com/rrwick/Unicycler) | 0.5.0
 [Snippy](https://github.com/tseemann/snippy) | 4.6.0
 
 ## Usage
 
-### Input requirements
+You need to do few steps to start using the two pipelines.
 
-To use the two differents tools you need paired end sequence reads files in fastq format (can be in .gz format).
-Forward and reverse files must be named like this :
-```
-strain_name_R1.fastq.gz
-strain_name_R2.fastq.gz
-```
-
-### De novo assembly
-
-The pipelines are designed for Escherichia coli strains, please change species and genus in prokka and abritamr rules of the genome assembly tool.
-
-```
-snakemake -s snakefile_assembly.py
-```
-
-### Requirements
-
-* Input : All paired reads need to be located in a `raw_reads` folder.
-* The Trimmomatic parameters need to be changed to match the analyses obtained with FastQC.
-
-### Variant calling
-
-
-```
-snakemake -s snakefile_variant_calling.py --configfile config.yaml
-```
-
-### Requirements
-
-* Input : All paired reads need to be located in a `raw_reads` folder.
-* The Trimmomatic parameters need to be changed to match the analyses obtained with FastQC.
+1. Database installation
+ 
+2. Config samples and tools

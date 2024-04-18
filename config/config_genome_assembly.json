@@ -1,0 +1,174 @@
+{
+    "project_name": "H_genome_assembly",
+    "path_raw_file": "raw_reads/",
+    "sample": [
+        {
+            "sampleID": "H10S0-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "marmotae"
+            }
+        },
+        {
+            "sampleID": "H10S1-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H10S3-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H13S3-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H1S1-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H1S2-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H1S3-I-A1",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H1S3-I",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H2S1-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H2S2-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H2S3-I",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H2S4-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H2S5-I",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H3S1-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H3S2-I",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H3S3-I",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H4S0-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H4S1-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H4S3-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H4S3-I",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H4S4-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H5S2-I",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H6S2-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        },
+        {
+            "sampleID": "H7S2-II",
+            "phylogeny":{
+                "genus": "Escherichia",
+                "species": "coli"
+            }
+        }
+    ]
+}

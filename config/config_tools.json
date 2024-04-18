@@ -1,0 +1,28 @@
+{
+    "fastp": {
+        "threads": 8,
+        "quality": 25,
+        "options": "--detect_adapter_for_pe -5 -r --correction"
+    },
+    "unicycler": {
+        "threads": 8,
+        "min_fasta_length": 200
+    },
+    "bakta": {
+        "threads": 8,
+        "database_path": "database/bakta/db"
+    },
+    "quast": {
+        "threads": 8,
+        "options": "--glimmer",
+        "genes_threshold": "0,1000"
+    },
+    "confindr": {
+        "analysis": "False",
+        "threads": 8,
+        "database_path": "Path_to_database"
+    },
+    "snippy": {
+        "threads": 8
+    }
+}

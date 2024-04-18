@@ -16,6 +16,7 @@ include: "rules/fastp_genome.py"
 include: "rules/unicycler.py"
 include: "rules/bakta.py"
 include: "rules/quast.py"
+include: "rules/confindr.py"
 
 list_files = get_all_output(config['sample'])
 

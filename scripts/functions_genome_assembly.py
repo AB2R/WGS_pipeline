@@ -12,11 +12,15 @@ def mkdirectory(project_name, samples_list):
     
     for sample in samples_list:
         if not os.path.exists(f"{project_name}/logs/{sample['sampleID']}"):
-            os.path.exists(f"{project_name}/logs/{sample['sampleID']}")
+            os.makedirs(f"{project_name}/logs/{sample['sampleID']}")
         
         for directory in list_sample_directory:
             if not os.path.exists(f"{project_name}/{sample['sampleID']}/{directory}"):
-                os.path.exists(f"{project_name}/{sample['sampleID']}/{directory}")
+                os.makedirs(f"{project_name}/{sample['sampleID']}/{directory}")
+
+        if config['confindr']['analysis'] == "True":
+            if not os.path.exists(f"{project_name}/{sample['sampleID']}/confindr"):
+                os.makedirs(f"{project_name}/{sample['sampleID']}/confindr")
 
 def get_list_sample(samples_list):
     """
@@ -55,5 +59,9 @@ def get_all_output(samples_list):
 
         #quast
         list_files.append(f"{PROJECTNAME}/{sample['sampleID']}/quast/report.html")
+
+        #confindr
+        if config['confindr']['analysis'] == "True":
+            list_files.append(f"{PROJECTNAME}/{sample['sampleID']}/confindr/confindr_report.csv")
 
     return list_files

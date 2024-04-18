@@ -1,11 +1,11 @@
-name: bakta
+name: confindr
 channels:
   - conda-forge
   - bioconda
   - defaults
 dependencies:
-  - bakta
-  - diamond=2.1.8
+  - confindr=0.8.1
+  - python=3.9.15
   - ca-certificates
   - certifi
   - openssl

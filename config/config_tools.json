@@ -10,12 +10,17 @@
     },
     "bakta": {
         "threads": 8,
-        "database_path": "database/bakta"
+        "database_path": "database/bakta/db"
     },
     "quast": {
         "threads": 8,
         "options": "--glimmer",
         "genes_threshold": "0,1000"
+    },
+    "confindr": {
+        "analysis": "False",
+        "threads": 8,
+        "database_path": "Path_to_database"
     },
     "snippy": {
         "threads": 8

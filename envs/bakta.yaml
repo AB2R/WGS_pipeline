@@ -2,7 +2,6 @@ name: bakta
 channels:
   - conda-forge
   - bioconda
-  - defaults
 dependencies:
   - bakta
   - diamond=2.1.8

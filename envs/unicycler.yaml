@@ -2,7 +2,6 @@ name: unicycler
 channels:
   - conda-forge
   - bioconda
-  - defaults
 dependencies:
   - conda-forge/linux-64::_libgcc_mutex==0.1=conda_forge
   - conda-forge/noarch::_sysroot_linux-64_curr_repodata_hack==3=h69a702a_13

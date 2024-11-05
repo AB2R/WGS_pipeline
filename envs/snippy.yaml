@@ -2,7 +2,6 @@ name: snippy
 channels:
   - conda-forge
   - bioconda
-  - defaults
 dependencies:
   - snippy
   - tabixpp==1.1.0

@@ -15,6 +15,8 @@ rule all:
     input:
         "bakta_db_updated"
 
+onsuccess:
+    shell("rm *_db_updated")
 
 ### Database rule
 rule bakta_database:

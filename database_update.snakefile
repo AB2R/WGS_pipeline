@@ -25,7 +25,7 @@ rule bakta_database:
     log:
         "database/logs/bakta_database"
     conda:
-        "envs/bakta.yaml"
+        "envs/bakta.yml"
     container:
         "docker://quay.io/biocontainers/bakta:1.9.4--pyhdfd78af_0"
     params:

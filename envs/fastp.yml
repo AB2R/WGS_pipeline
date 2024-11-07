@@ -3,4 +3,4 @@ channels:
   - conda-forge
   - bioconda
 dependencies:
-  - fastp
+  - bioconda::fastp=0.23.4=h125f33a_5

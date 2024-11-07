@@ -10,7 +10,7 @@ rule confindr:
     log:
         f"{PROJECTNAME}/logs/{{sample}}/{{sample}}_confindr.log"
     conda:
-        "../envs/confindr.yaml"
+        "../envs/confindr.yml"
     container:
         "docker://quay.io/biocontainers/confindr:0.8.1--pyhdfd78af_0"
     threads:

@@ -11,7 +11,7 @@ rule snippy:
     log:
         f"{PROJECTNAME}/logs/{{sample}}/{{sample}}_snippy.log"
     conda:
-        "../envs/snippy.yaml"
+        "../envs/snippy.yml"
     container:
         "docker://quay.io/biocontainers/snippy:4.6.0--hdfd78af_5"
     threads:

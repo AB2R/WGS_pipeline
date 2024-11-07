@@ -13,7 +13,7 @@ rule fastp:
     log:
         f"{PROJECTNAME}/logs/{{sample}}/{{sample}}_fastp.log"
     conda:
-        "../envs/fastp.yaml"
+        "../envs/fastp.yml"
     container:
         "docker://quay.io/biocontainers/fastp:0.23.3--h5f740d0_0"
     threads:

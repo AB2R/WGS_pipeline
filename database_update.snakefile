@@ -26,6 +26,8 @@ rule bakta_database:
         "database/logs/bakta_database"
     conda:
         "envs/bakta.yaml"
+    container:
+        "docker://quay.io/biocontainers/bakta:1.9.4--pyhdfd78af_0"
     params:
         database_path = config['bakta_database']['folder_path'],
         type = config['bakta_database']['type']

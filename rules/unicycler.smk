@@ -12,6 +12,8 @@ rule unicycler:
         f"{PROJECTNAME}/logs/{{sample}}/{{sample}}_unicycler.log"
     conda:
         "../envs/unicycler.yaml"
+    container:
+        "docker://quay.io/biocontainers/unicycler:0.5.1--py38h40d3509_2"
     threads:
         config['unicycler']['threads']
     shell:

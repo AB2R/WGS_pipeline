@@ -13,6 +13,8 @@ rule bakta:
         f"{PROJECTNAME}/logs/{{sample}}/{{sample}}_bakta.log"
     conda:
         "../envs/bakta.yaml"
+    container:
+        "docker://quay.io/biocontainers/bakta:1.9.4--pyhdfd78af_0"
     threads:
         config['bakta']['threads']
     shell:

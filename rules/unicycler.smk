@@ -12,7 +12,7 @@ rule unicycler:
         f"{PROJECTNAME}/logs/{{sample}}/{{sample}}_unicycler.log"
     conda:
         "../envs/unicycler.yml"
-    container:
+    singularity:
         "docker://quay.io/biocontainers/unicycler:0.5.1--py38h40d3509_2"
     threads:
         config['unicycler']['threads']

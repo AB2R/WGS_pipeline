@@ -12,7 +12,7 @@ rule snippy:
         f"{PROJECTNAME}/logs/{{sample}}/{{sample}}_snippy.log"
     conda:
         "../envs/snippy.yml"
-    container:
+    singularity:
         "docker://quay.io/biocontainers/snippy:4.6.0--hdfd78af_5"
     threads:
         config['snippy']['threads']

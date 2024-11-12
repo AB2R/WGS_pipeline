@@ -11,7 +11,7 @@ rule confindr:
         f"{PROJECTNAME}/logs/{{sample}}/{{sample}}_confindr.log"
     conda:
         "../envs/confindr.yml"
-    container:
+    singularity:
         "docker://quay.io/biocontainers/confindr:0.8.1--pyhdfd78af_0"
     threads:
         config['confindr']['threads']

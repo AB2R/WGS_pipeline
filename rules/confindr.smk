@@ -19,7 +19,7 @@ rule confindr:
         """
         confindr -t {threads} \
         --forward_id '_R1' \
-        --reverse_id 'R2' \
+        --reverse_id '_R2' \
         -i {params.reads_path} \
         -o {params.output_path} \
         -d {params.database_path} \

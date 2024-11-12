@@ -14,7 +14,9 @@ rule quast:
     log:
         f"{PROJECTNAME}/logs/{{sample}}/{{sample}}_quast.log"
     conda:
-        "../envs/quast.yaml"
+        "../envs/quast.yml"
+    singularity:
+        "docker://quay.io/biocontainers/quast:5.2.0--py38pl5321h40d3509_4"
     threads:
         config['quast']['threads']
     shell:

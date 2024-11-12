@@ -12,9 +12,9 @@ mkdirectory(PROJECTNAME, config['sample'])
 SAMPLES = get_list_sample(config['sample'])
 
 ### Import rules
-include: "rules/fastp_variant.py"
-include: "rules/snippy.py"
-include: "rules/confindr.py"
+include: "rules/fastp_variant.smk"
+include: "rules/snippy.smk"
+include: "rules/confindr.smk"
 
 list_files = get_all_output(config['sample'])
 

@@ -6,7 +6,7 @@
     },
     "unicycler": {
         "threads": 8,
-        "min_fasta_length": 200
+        "min_fasta_length": 1000
     },
     "bakta": {
         "threads": 8,

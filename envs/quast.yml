@@ -3,4 +3,4 @@ channels:
   - conda-forge
   - bioconda
 dependencies:
-  - quast
+  - bioconda::quast=5.2.0=py312pl5321hc60241a_4

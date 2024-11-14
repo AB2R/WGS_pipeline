@@ -19,7 +19,7 @@ rule confindr:
     shell:
         """
         mkdir -p {params.reads_path}
-        cp {input.clean_R1} {input.clean_R2} {params.read_path}
+        cp {input.clean_R1} {input.clean_R2} {params.reads_path}
         confindr -t {threads} -i {params.reads_path} -o {params.output_path} -d {params.database_path} --rmlst 2>{log}
         rm -rf {params.reads_path}
         """
